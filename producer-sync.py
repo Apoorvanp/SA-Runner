@@ -8,5 +8,5 @@ while True:
             production = random.uniform(2, 10)
             payload = {"communityId": community,"houseId": house,"energyProduced":  production}
             response = requests.post(url='http://host.docker.internal:8080/api/v1/marketplace/produce', json=payload)
-            print("Produced {} for community: {}, house: {}, {}", production, community, house, response.status_code)
+            print(f'Produced {production} for community: {community}, house: {house}')
     time.sleep(2)
