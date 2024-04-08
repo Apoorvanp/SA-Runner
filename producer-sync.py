@@ -4,6 +4,7 @@ import requests
 import time
 
 host = os.environ['HOST']
+
 while True:
     for community in range(1,10):
         for house in range(1,5):
