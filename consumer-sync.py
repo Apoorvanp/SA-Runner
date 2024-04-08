@@ -5,6 +5,8 @@ import time
 
 host = os.environ['HOST']
 
+time.sleep(10)
+
 while True:
     for community in range(1,10):
         for house in range(1,5):
