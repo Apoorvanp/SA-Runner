@@ -12,6 +12,6 @@ while True:
         for house in range(1,5):
             production = random.uniform(2, 10)
             payload = {"communityId": community,"houseId": house,"energyProduced":  production}
-            response = requests.post(url=f'http://{host}/api/v1/productions', json=payload)
+            response = requests.post(url=f'{host}/api/v1/productions', json=payload)
             print(f'Produced {production} for community: {community}, house: {house}')
     time.sleep(2)
